@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brown-btn: #973A42;
+    --font-white: #fff;
+    --logo-dark: #2D2A3C;
+    --body-dark: #443146;
+    --body-dark-70: #443146df;
+    --card-brown: #64353C;
+    --ylw-stroke: #FBDB9E;
+    --ylw-stroke-70: #fbda9ed9;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Changa", sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../images/BG-Mawaqit.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+
+.logo h1 {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    color: var(--logo-dark);
+    font-size: 2.4rem;
+}
+
+.local-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    background-color: var(--brown-btn);
+    padding: 0.9rem 1.4rem;
+    border-radius: .76rem;
+    color: var(--font-white);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.local-btn:hover {
+    background-color: var(--font-white);
+    color: var(--brown-btn);
+    transform: translateY(2px);
+}
+
+.local-btn p, .local-btn i {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cur-city p, .cur-date p, .aya-container p {
+    font-size: 1.07rem;
+    color: var(--body-dark-70);
+    font-weight: 300;
+}
+
+.city-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#city {
+    margin-top: -2rem;
+    font-size: 4.5rem;
+    color: var(--body-dark);
+}
+
+.sunset-sunrise {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sunrise, .sunset {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+#chorok, #ghorob {
+    color: var(--body-dark-70);
+    font-weight: 300;
+}
+
+#sunrise-time, #sunset-time {
+    font-weight: 500;
+    color: var(--body-dark);
+}
+
+.cur-date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#date {
+    color: var(--body-dark);
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+#cities {
+    background: none;
+    outline: none;
+    border: 2px solid #3F2839;
+    border-radius: .76rem;
+    padding: 0.9rem 1.4rem;
+    color: #3F2839;
+    font-size: 1.2rem;
+    font-family: "Changa", sans-serif;
+}
+
+.aya-container {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    width: 80%;
+    justify-content: center;
+}
+
+#aya {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 2.4rem;
+    color: var(--body-dark);
+}
+
+.prayer-cards {
+    width: 80%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.salat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .1rem;
+    background-color: var(--card-brown);
+    border-radius: 1.7rem;
+    border-bottom: 2px solid var(--ylw-stroke);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.salat-card:hover {
+    background-color: #64353cb7;
+    transform: scale(1.05);
+}
+
+.salat-img img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1.7rem;
+    border-top-right-radius: 1.7rem;
+}
+
+.salat-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-white);
+}
+
+.salat-info p {
+    color: #ffffffd8;
+    margin-bottom: -.6rem;
+    font-size: 1.06rem;
+    font-weight: 200;
+}
+
+.salat-info h2 {
+    font-size: 2.4rem;
+    margin-top: -.6rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ylw-stroke-70);
+    border-top: 1px solid var(--body-dark-70);
+    padding-top: .8rem;
+}
+
+.author a {
+    text-decoration: none;
+    color: var(--ylw-stroke-70);
+    transition: all .3s ease;
+    margin-left: .5rem;
+}
+
+.author a:hover {
+    color: var(--font-white);
+    background-color: var(--body-dark-70);
+    border-radius: .3rem;
+    padding: .2rem .4rem;
+}
+
+@media screen and (min-width: 340px) and (max-width: 1024px) {
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .local-btn {
+        gap: .6rem;
+        padding: 0.7rem 1.1rem;
+    }
+
+    .local-btn p, .local-btn i {
+        font-size: 1rem;
+    }
+
+    #city {
+        font-size: 3.6rem;
+    }
+
+    .cur-city p, .cur-date p, .aya-container p {
+        font-size: .9rem;
+    }
+
+    .sunrise, .sunset {
+        font-size: 1.2rem;
+    }
+
+    #date {
+        font-size: 1.9rem;
+    }
+
+    #cities {
+        padding: 0.7rem 1.08rem;
+        font-size: 1rem;
+    }
+
+    .aya-container {
+        gap: 1rem;
+    }
+
+    #aya {
+        font-size: 2rem;
+    }
+}

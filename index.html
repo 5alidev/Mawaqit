@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Lalezar&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+    <!-- End Fonts -->
+    <title>مواقيت</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="logo">
+                <h1>مواقيت</h1>
+            </div>
+            <div class="location">
+                <div class="local-btn" id="loc-btn">
+                    <p>تحديد الموقع</p>
+                    <i class="fa fa-map-marker"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="content-container">
+            <div class="cur-city">
+                <p>المدينة الحالية</p>
+            </div>
+            <div class="city-name">
+                <h1 id="city">
+                    الدار البيضاء
+                </h1>
+                <div class="sunset-sunrise">
+                    <div class="sunrise">
+                        <p id="chorok">الشروق</p>
+                        <p id="sunrise-time">06:30</p>
+                    </div>
+                    <div class="sunset">
+                        <p id="ghorob">الغروب</p>
+                        <p id="sunset-time">08:23</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cur-date">
+                <p>تاريخ اليوم</p>
+                <h2 id="date"></h2>
+            </div>
+            <div class="city-select">
+                <select name="cities" id="cities">
+                    <option value="casa" selected disabled>اختر مدينة</option>
+                </select>
+            </div>
+            <div class="aya-container">
+                <p>قال تعالى:</p>
+                <p id="aya">
+                    إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَوْقُوتًا
+                </p>
+                <p>صدق الله العظيم</p>
+            </div>
+        </div>
+        <div class="prayer-cards">
+            <div class="salat-card">
+                <div class="salat-img">
+                    <img src="./images/fajr image.jpeg" alt="fajr">
+                </div>
+                <div class="salat-info">
+                    <p>صلاة الفجر</p>
+                    <h2 id="fajr-time">04:38</h2>
+                </div>
+            </div>
+            
+            <div class="salat-card">
+                <div class="salat-img">
+                    <img src="./images/dhuhr image.jpeg" alt="dhuhr">
+                </div>
+                <div class="salat-info">
+                    <p>صلاة الظهر</p>
+                    <h2 id="dhuhr-time">04:38</h2>
+                </div>
+            </div>
+            
+            <div class="salat-card">
+                <div class="salat-img">
+                    <img src="./images/asr image.jpeg" alt="asr">
+                </div>
+                <div class="salat-info">
+                    <p>صلاة العصر</p>
+                    <h2 id="asr-time">04:38</h2>
+                </div>
+            </div>
+            
+            <div class="salat-card">
+                <div class="salat-img">
+                    <img src="./images/maghrib image.jpeg" alt="maghrib">
+                </div>
+                <div class="salat-info">
+                    <p>صلاة المغرب</p>
+                    <h2 id="maghrib-time">04:38</h2>
+                </div>
+            </div>
+            
+            <div class="salat-card">
+                <div class="salat-img">
+                    <img src="./images/isha image.jpeg" alt="isha">
+                </div>
+                <div class="salat-info">
+                    <p>صلاة العشاء</p>
+                    <h2 id="isha-time">04:38</h2>
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            <p>Developed By <a href="https://github.com/5alidev"><i class="fa fa-github" aria-hidden="true"></i> Khalid Dev</a></p>
+        </div>
+    </main>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./script/app.js"></script>
+</body>
+</html>
