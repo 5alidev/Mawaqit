@@ -13,7 +13,7 @@ This project, Mawaqit, is a web application designed to display Islamic prayer t
 
 ### Links
 
-- Live Site URL: [Mawaqit](https://github.com/5alidev)
+- Live Site URL: [Mawaqit](https://mawaqit-qef47mlef-5alidevs-projects.vercel.app/)
 
 ### Features
 
