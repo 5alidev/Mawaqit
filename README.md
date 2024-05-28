@@ -9,7 +9,7 @@ This project, Mawaqit, is a web application designed to display Islamic prayer t
 - **HTML:** Provides the structure for the webpage.
 - **CSS:** Styles the webpage for a user-friendly and informative display.
 - **JavaScript:** Uses Axios library to fetch prayer times data from an API.
-- **API:** (**[Adhan API](https://aladhan.com/prayer-times-api)** - Fetches prayer times data for a specific location.
+- **API:** **[Adhan API](https://aladhan.com/prayer-times-api)** - Fetches prayer times data for a specific location.
 
 ### Links
 
