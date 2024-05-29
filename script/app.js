@@ -119,7 +119,7 @@ citiesSelect.addEventListener('change', (e) => {
     const selectedText = selectedOption.textContent;
     cityElem.innerHTML = "";
     cityElem.innerHTML = selectedText;
-    const url = `http://api.aladhan.com/v1/timingsByCity?city=${e.target.value}&country=Morocco&method=2`;
+    const url = `https://api.aladhan.com/v1/timingsByCity?city=${e.target.value}&country=Morocco&method=2`;
     axiosData(url);
 })
   
@@ -174,7 +174,7 @@ localBtn.addEventListener('click', (e) => {
         const longitude = position.coords.longitude;
         const currentDate = getFormattedDate();
 
-        const url = `http://api.aladhan.com/v1/timings/${currentDate}?latitude=${latitude}&longitude=${longitude}&method=2`;
+        const url = `https://api.aladhan.com/v1/timings/${currentDate}?latitude=${latitude}&longitude=${longitude}&method=2`;
         console.log(url);
         axiosData(url);
 
