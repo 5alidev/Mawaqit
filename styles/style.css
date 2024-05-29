@@ -89,12 +89,14 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 
 #city {
     margin-top: -2rem;
     font-size: 4.5rem;
     color: var(--body-dark);
+    text-align: center;
 }
 
 .sunset-sunrise {
@@ -251,7 +253,7 @@ nav {
     }
 
     #city {
-        font-size: 3.6rem;
+        font-size: 3rem;
     }
 
     .cur-city p, .cur-date p, .aya-container p {
