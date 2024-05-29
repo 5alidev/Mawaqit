@@ -1,5 +1,5 @@
 const city = "Casablanca";
-const url = `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=Morocco&method=2`;
+const url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=Morocco&method=2`;
 const dateElem = document.getElementById('date');
 const sunriseTime = document.getElementById('sunrise-time');
 const sunsetTime = document.getElementById('sunset-time');
